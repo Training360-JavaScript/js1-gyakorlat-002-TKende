@@ -4,3 +4,15 @@
 - A függvény szorozza meg a tömbelemek értékét 1.27-tel, majd pedig 
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
+
+
+function brutto(tomb) {
+
+    const reducer = (previousValue, currentValue) => previousValue + currentValue;
+    var ossz = tomb.map(element => element * 1.27).reduce(reducer);
+
+    return Math.floor(ossz);
+}
+
+
+//
