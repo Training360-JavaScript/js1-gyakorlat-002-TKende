@@ -4,3 +4,13 @@
 - A függvény neve `generateList` legyen!
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
+var asd = ['asd,sdf,dfg'];
+
+
+function generateList(lista) {
+
+    var vissza = '<ul> <li>' + lista.join(' </li> <li>') + ' </li> </ul>';
+    return vissza;
+}
+
+generateList(asd);

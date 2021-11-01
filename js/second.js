@@ -15,3 +15,14 @@ hogy a tömb minden eleme number típusú-e vagy sem
 - `someElementsAreNumbers`: Értéke true/false attól függően, 
 hogy a tömbben van-e number típusú elem vagy sem
 */
+
+function checker(tomb, ertek) {
+    let vissza = {
+        exists: Boolean(tomb.find(asd => asd === ertek)),
+        index: tomb.findIndex(asd => asd === ertek),
+        allElementsAreNumbers: tomb.every(asd => typeof asd == 'number'),
+        someElementsAreNumbers: tomb.some(asd => typeof asd == 'number')
+    };
+
+    return vissza;
+}
